@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "vazirmatn";
+    src: url("../public/fonts/Vazir.woff") format('woff');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer base {
+    html {
+        font-family: 'vazirmatn';
+        direction: rtl;
+    }
+
+    .input-component {
+        @apply flex flex-row justify-between items-center w-full bg-white rounded-[60px] p-[18px] max-w-[442px] max-h-[61px] gap-4 shadow-sm
+    }
+
+    input[type=text] {
+        @apply focus:outline-none w-full h-fit placeholder:font-normal placeholder:text-base
+    }
+
+    button {
+        @apply text-base font-medium flex w-full justify-center bg-primary-color max-w-[442px] max-h-[55px] rounded-[20px] p-[18px] text-white hover:bg-primary-color-dark
+    }
 }

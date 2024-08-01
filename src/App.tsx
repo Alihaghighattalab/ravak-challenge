@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ResetPasswordForm } from './components/reset-password-form';
+import { SocialComponent } from './components/socials';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <section
+        className="flex flex-row items-center xl:items-stretch justify-center xl:justify-between w-full h-screen p-6 gap-[60px]">
+        <ResetPasswordForm />
+        <div className="hidden xl:flex !w-1/2 h-full justify-center items-center">
+          <img src="/reset-password.svg" alt="Reset password" className="w-auto antialiased" />
+        </div>
+      </section>
+      <SocialComponent />
+    </>
   );
 }
 

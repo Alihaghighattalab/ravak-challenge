@@ -3,7 +3,7 @@ import { InputComponent } from "./input"
 export const ResetPasswordForm = () => {
     return (
         <div
-            className="w-full max-w-[500px] p-5 md:p-5 h-fit xl:p-0 xl:h-auto xl:w-1/2 xl:max-w-none bg-login-card rounded-[40px] flex flex-col items-center justify-center xl:justify-start gap-y-8">
+            className="w-full max-w-[500px] p-5 md:p-5 h-fit xl:p-0 xl:h-auto xl:w-1/2 xl:max-w-none bg-secondry-color rounded-[40px] flex flex-col items-center justify-center xl:justify-start gap-y-8">
             <img src="/logo.svg" alt="logo" className="size-fit antialiased mt-0 xl:mt-20" />
             <div className="flex flex-col">
                 <div className="flex flex-col text-center xl:text-right gap-3">

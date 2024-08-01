@@ -1,10 +1,8 @@
 import { ResetPasswordForm } from './components/reset-password-form';
 import { SocialsComponent } from './components/socials';
-
-type SocialsType = "telegram" | "linkedin" | "instagram" | "whatsapp" | "facebook"
+import { socialsList } from "./utility/variables"
 
 function App() {
-  const socialsList: SocialsType[] = ["whatsapp", "telegram", "instagram", "linkedin", "facebook"]
   return (
     <>
       <section

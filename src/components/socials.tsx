@@ -3,6 +3,7 @@ import { FC } from "react";
 type Props = {
     type: string
 }
+
 export const SocialsComponent: FC<Props> = ({ type = "telegram" }) => {
     const renderSocial = (model: string) => {
         switch (model) {

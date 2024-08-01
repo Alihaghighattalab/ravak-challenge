@@ -1,4 +1,3 @@
-import './App.css';
 import { ResetPasswordForm } from './components/reset-password-form';
 import { SocialComponent } from './components/socials';
 

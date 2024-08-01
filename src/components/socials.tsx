@@ -1,11 +1,24 @@
-export const SocialComponent = () => {
+import { FC } from "react";
+
+type Props = {
+    type: string
+}
+export const SocialsComponent: FC<Props> = ({ type = "telegram" }) => {
+    const renderSocial = (model: string) => {
+        switch (model) {
+            case "whatsapp":
+                return "whatsapp"
+            case "facebook":
+                return "facebook"
+            case "instagram":
+                return "instagram"
+            case "telegram":
+                return "telegram"
+            default:
+                return "linkedin"
+        }
+    }
     return (
-        <div className="hiden xl:absolute bottom-6 left-6 flex flex-row gap-[6px] items-center">
-            <img src="/whatsapp.svg" alt="whatsapp" className="cursor-pointer" />
-            <img src="/telegram.svg" alt="telegram" className="cursor-pointer" />
-            <img src="/instagram.svg" alt="instagram" className="cursor-pointer" />
-            <img src="/linkedin.svg" alt="linkedin" className="cursor-pointer" />
-            <img src="/facebook.svg" alt="facebook" className="cursor-pointer" />
-        </div>
+        <img src={`${renderSocial(type)}.svg`} alt={`${renderSocial(type)}`} className="cursor-pointer" />
     )
 }

@@ -1,7 +1,10 @@
 import { ResetPasswordForm } from './components/reset-password-form';
-import { SocialComponent } from './components/socials';
+import { SocialsComponent } from './components/socials';
+
+type SocialsType = "telegram" | "linkedin" | "instagram" | "whatsapp" | "facebook"
 
 function App() {
+  const socialsList: SocialsType[] = ["whatsapp", "telegram", "instagram", "linkedin", "facebook"]
   return (
     <>
       <section
@@ -11,7 +14,9 @@ function App() {
           <img src="/reset-password.svg" alt="Reset password" className="w-auto antialiased" />
         </div>
       </section>
-      <SocialComponent />
+      <div className="hiden xl:absolute bottom-6 left-6 flex flex-row gap-[6px] items-center">
+        {socialsList?.map((social: string) => <SocialsComponent type={social} key={social} />)}
+      </div>
     </>
   );
 }

@@ -12,7 +12,7 @@ function App() {
           <img src="/reset-password.svg" alt="Reset password" className="w-auto antialiased" />
         </div>
       </section>
-      <div className="hiden xl:absolute bottom-6 left-6 flex flex-row gap-[6px] items-center">
+      <div className="hidden xl:absolute bottom-6 left-6 flex flex-row gap-[6px] items-center">
         {socialsList?.map((social: string) => <SocialsComponent type={social} key={social} />)}
       </div>
     </>

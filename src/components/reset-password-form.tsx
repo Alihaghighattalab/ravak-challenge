@@ -1,4 +1,6 @@
+import { socialsList } from "../utility/variables"
 import { InputComponent } from "./input"
+import { SocialsComponent } from "./socials"
 
 export const ResetPasswordForm = () => {
     return (
@@ -16,6 +18,9 @@ export const ResetPasswordForm = () => {
                     <InputComponent placeholder='تکرار رمز عبور' />
                 </div>
                 <button className="mt-11">ذخیره</button>
+            </div>
+            <div className="hidden  absolute bottom-3 left-3 lg:flex flex-row gap-x-[6px]">
+                {socialsList?.map((social: string) => <SocialsComponent type={social} key={social} />)}
             </div>
         </div>
     )

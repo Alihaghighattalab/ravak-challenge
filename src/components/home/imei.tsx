@@ -2,7 +2,7 @@ import { InputComponent } from "../input"
 
 export const IMEI = () => {
     return (
-        <div className="w-full h-fit items-center xl:items-stretch xl:h-fit flex flex-col xl:flex-row xl:justify-between bg-secondry-color p-[30px] mt-[30px] rounded-[40px]">
+        <div className="w-full h-fit items-center xl:items-stretch xl:h-fit flex flex-col xl:flex-row xl:justify-between bg-secondry-color p-[15px] xl:p-[30px] mt-[30px] rounded-[40px]">
             <img src="/svgs/home-image.svg" alt="page home" className="size-96" />
             <div className="flex flex-col justify-between items-end w-full">
                 <div className="flex flex-col w-full gap-y-10 xl:gap-y-20">

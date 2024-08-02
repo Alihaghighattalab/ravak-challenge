@@ -16,13 +16,13 @@ export const HomeLayout: FC<Props> = ({ children }) => {
 
                 <div className="flex flex-col w-full p-[30px] max-h-screen overflow-y-auto xl:max-h-none xl:overflow-auto">
                     <Header setShowSidebar={setShowSidebar} />
-                    <div className="h-screen">
+                    <div className="min-h-max xl:h-screen">
                         {children}
                     </div>
                     <Footer />
                 </div>
             </div>
-            {showSidebar && <MobileSidebar setShowSidebar={setShowSidebar}/>}
+            {showSidebar && <MobileSidebar setShowSidebar={setShowSidebar} />}
         </Fragment>
     )
 }

@@ -11,7 +11,7 @@ export const MobileSidebar: FC<Props> = ({ setShowSidebar }) => {
     const { pathname } = useLocation()
     const handleCloseSidenav = () => setShowSidebar(false)
     return (
-        <div className="lg:hidden fixed top-0 left-full z-0 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-secondry-color w-max">
+        <div className="lg:hidden fixed top-0 left-full z-0 h-screen p-4 transition-transform -translate-x-full bg-secondry-color w-max">
             <div className="size-5 rounded-full bg-sidebar-items-text-color flex justify-center text-white" onClick={handleCloseSidenav}>X</div>
             <div className="lg:hidden w-full h-full max-w-max p-[21px] flex flex-col gap-y-[44px] items-center xl:max-w-fit bg-secondry-color">
                 <img src="/logo.svg" alt="logo" />

@@ -19,7 +19,7 @@ export const ResetPasswordForm = () => {
                 </div>
                 <button className="mt-11">ذخیره</button>
             </div>
-            <div className="hidden  absolute bottom-3 left-3 lg:flex flex-row gap-x-[6px]">
+            <div className="hidden absolute bottom-3 left-3 xl:flex flex-row gap-x-[6px]">
                 {socialsList?.map((social: string) => <SocialsComponent type={social} key={social} />)}
             </div>
         </div>
